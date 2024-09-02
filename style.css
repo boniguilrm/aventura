@@ -1,0 +1,95 @@
+/* Estilização do corpo */
+body {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent) 0 0,
+                linear-gradient(225deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent) 0 0;
+    background-size: 50px 50px; /* Tamanho do padrão */
+    background-color: #2c2c2c; /* Cor de fundo base */
+    color: #d9d9d9; /* Cor do texto */
+    font-family: "Signika Negative", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura total da tela */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; /* Transição suave para mudança de cor de fundo */
+}
+
+/* Contêiner principal */
+main {
+    background-color: #3a3a3a; /* Fundo mais claro para o contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 80%;
+    max-width: 600px; /* Largura máxima */
+    text-align: center;
+}
+
+/* Estilização dos botões */
+button {
+    background-color: #4a4a4a; /* Cor de fundo dos botões */
+    color: #ffffff; /* Cor do texto dos botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    margin: 10px; /* Espaçamento entre botões */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #6a6a6a; /* Cor ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+/* Estilização dos passos */
+.passo {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transição suave para aparecer/desaparecer */
+}
+
+.passo.ativo {
+    display: block;
+    opacity: 1;
+}
+
+/* Tela de vitória */
+.tela-vitoria,
+.tela-derrota {
+    display: none;
+    background-color: #4caf50; /* Cor de fundo para vitória */
+    color: #ffffff; /* Cor do texto */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: fixed; /* Fica fixa no centro da tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tela-vitoria {
+    background-color: #4caf50; /* Verde para vitória */
+}
+
+.tela-derrota {
+    background-color: #f44336; /* Vermelho para derrota */
+}
+
+/* Botões na tela de vitória/derrota */
+.tela-vitoria button,
+.tela-derrota button {
+    background-color: #ffffff; /* Cor de fundo dos botões */
+    color: #000000; /* Cor do texto dos botões */
+    border: 1px solid #000000; /* Borda preta */
+    margin: 10px;
+}

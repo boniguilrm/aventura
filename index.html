@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aventura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+        <p>Você acorda em uma ambulância após desmaiar durante um evento na sua cidade. Seu objetivo é encontrar seus amigos até o fim da festa.</p>
+    <button class="btn-proximo" data-proximo="2">conversar com o médico.</button>
+    <button class="btn-proximo" data-proximo="1">fugir da ambulância.</button>    
+    </div>
+    <div class="passo" id="passo-1">
+        <p>o enfermeiro corre em sua direção e quase te pega, mas como está de preto, ele não te vê na escuridão. Agora você precisa entrar de novo no evento.</p>
+    <button class="btn-proximo" data-proximo="t">fingir que é um funcionario.</button>
+    <button class="btn-proximo" data-proximo="9">pular o muro.</button>    
+    </div>
+    <div class="passo" id="passo-2">
+        <p>o médico te diz para ficar quieto enquanto te oferece medicamentos.</p>
+    <button class="btn-proximo" data-proximo="0">voltar</button>
+      
+    </div>
+    <div class="passo" id="passo-t">
+        <p>você finge ser “Felipe”, um segurança. Por incrível que pareça seu plano funcionou.</p>
+    <button class="btn-proximo" data-proximo="o">continuar.</button>
+    
+    </div>
+    <div class="passo" id="passo-o">
+        <p>já dentro da festa, você vê seus amigos com quem estava, e ao lado oposto uma bela moça desconhecida te olhando.</p>
+    <button class="btn-proximo" data-proximo="p">ir até seus amigos.</button>
+    <button class="btn-proximo" data-proximo="l">ir até a moça.</button>
+    </div>
+    <div class="passo" id="passo-9">
+        <p>você cai, e falha...</p>
+    <button class="btn-proximo" data-proximo="1">voltar.</button>
+</div>
+<div class="passo" id="passo-p">
+    <p>você curtiu o resto da noite com seus amigos. Parabéns, você venceu!</p>
+    <button class="btn-proximo" data-proximo="0">voltar</button>
+</div>
+<div class="passo" id="passo-l">
+    <p>ela não te deu atenção e você se perdeu dos seus amigos. Fim de jogo.</p>
+    <button class="btn-proximo" data-proximo="0">reiniciar.</button>
+
+</div>
+    
+    
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
